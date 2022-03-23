@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>semaforo</title>
+    </head>
+    <body>
+        <h1>Sefamoro</h1><br>
+
+        <div>
+            <form method="post">
+                <h1>Per usare i campi per cambiare i secondi dopo aver inserito il valore premere Invio</h1>
+                <br>
+                <h1>Cambia tempo semaforo Verde: </h1><input type="text" placeholder="secondi" name="V" id="V"><br>
+                <h1>Cambia tempo semaforo Giallo: </h1><input type="text" placeholder="secondi" name="G" id="G"><br>
+                <h1>Cambia tempo semaforo Rosso: </h1><input type="text" placeholder="secondi" name="R" id="R"><br>
+                <input type="submit" value="Attiva" name="Attiva"> 
+                <input type="submit" value="Disattiva" name="Disattiva"> 
+                
+
+            </form>
+            {% if error %}
+            <p class="error"><strong>Soluzione:</strong> {{ error }}
+            {% endif %}
+        </div>
+        
+    </body>
+</html>
