@@ -3,7 +3,7 @@ import csv
 import threading as thr
 url = 'http://192.168.0.141:5000/'
 passwordlist=None
-with open('C:/Users/albyAa/Downloads/psw.csv') as csv_file:
+with open('psw.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
