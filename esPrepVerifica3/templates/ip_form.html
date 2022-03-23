@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Ip scan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please enter an ip and a range of ports</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Ip address" name="ip" value="{{
+          request.form.ip }}">
+        <input type="number" placeholder="Min Port" name="portMin" value="{{
+          request.form.portMin }}">
+        <input type="number" placeholder="Max Port" name="portMax" value="{{
+          request.form.portMax }}">
+        <input class="btn btn-default" type="submit" value="Check">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
