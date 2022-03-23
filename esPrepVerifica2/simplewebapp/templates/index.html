@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>SCAN PORTE</title>
+    </head>
+    <body>
+        <h1>Scan Porte</h1>
+
+        <div>
+            
+            <form method="post">
+                <div><input type="text" id="IPp" placeholder="Inserire IP,minPort,maxPort" name="IPp"></div>
+                
+            </form>
+            {% if msg %}
+            <p class="msg"><strong>msg</strong> {{ msg }}
+            {% endif %}
+        </div>
+        
+    </body>
+</html>
