@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Calcolo Integrali</title>
+    </head>
+    <body>
+        <h1>Calcolo</h1>
+
+        <div>
+            <form method="post">
+                <input type="text" placeholder="funzione" name="funzione" id="funzione">
+                <input type="text" placeholder="estremo basso" name="basso" id="basso">
+                <input type="text" placeholder="estremo alto" name="alto" id="alto">
+                <input type="submit" value="Invia">
+            </form>
+            {% if error %}
+            <p class="error"><strong>Soluzione:</strong> {{ error }}
+            {% endif %}
+        </div>
+        
+    </body>
+</html>
